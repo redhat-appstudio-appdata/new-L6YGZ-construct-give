@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: new
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: new
+    app.kubernetes.io/part-of: new
+  name: newp3ph
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: new
+    weight: null
+status: {}
