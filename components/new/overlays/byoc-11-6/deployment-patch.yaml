@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: new
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-support-csears-tenant/new/new@sha256:88f8f7c1bd13c89c159817b233b7293b1721df6b3881b6c7f47d63216b138372
+        name: my-java-springboot
+        resources: {}
+status: {}
